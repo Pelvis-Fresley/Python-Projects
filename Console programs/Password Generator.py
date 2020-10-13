@@ -1,9 +1,18 @@
-import random, string, secrets, uuid
-import os
+import random
+import string
+import secrets
+import uuid
+
+from os import system, name
 from time import sleep
 
 def clear():
-    os.system('cls' if os.name=='nt' else 'clear')
+    if name == 'nt': 
+        _ = system('cls') 
+  
+    # for mac and linux 
+    else: 
+        _ = system('clear') 
 
 
 print('Please choose the type of password you want to generate:')
