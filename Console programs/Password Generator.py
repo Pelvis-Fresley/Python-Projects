@@ -8,11 +8,11 @@ from time import sleep
 
 def clear():
     if name == 'nt': 
-        _ = system('cls') 
+        system('cls') 
   
     # for mac and linux 
     else: 
-        _ = system('clear') 
+        system('clear') 
 
 
 print('Please choose the type of password you want to generate:')
